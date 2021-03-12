@@ -17,6 +17,7 @@ $nav: pink;
 }
 
 
+
 @mixin size{
     height: 500px;
     background-color:blue;
@@ -27,21 +28,39 @@ $nav: pink;
     
 }
 .intro{
-    @include size;
+   
+    max-height: 500px;;
+    align-content: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px ;
 }
 
-.article{
-        background-color: red;
+
+.footer{
+    background-color: red;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 20px;
+        ul{ list-style-type: none;
+        }
+       
 
         @media screen and (max-width: 800px) {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            
-              background-color:whitesmoke;
-            
+            grid-template-columns: 1fr ;
+            background-color:whitesmoke;
     
-}}
+}
+}
+.first{
+    justify-content: center;
+}
+
+.button{
+   justify-content: center;
+
+}
+
+
